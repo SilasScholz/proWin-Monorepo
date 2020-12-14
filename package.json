@@ -1,0 +1,21 @@
+{
+  "name": "proWin-Monorepo",
+  "description": "proWin JavaScript Monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start:ios": "yarn workspace @proWin/app ios",
+    "start:android": "yarn workspace @proWin/app android"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**",
+      "products/**"
+    ]
+  }
+}
